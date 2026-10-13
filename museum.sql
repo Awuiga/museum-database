@@ -54,10 +54,12 @@ CREATE TABLE museum_collections (
         display_end_date >= display_start_date
     ),
     CONSTRAINT chk_collection_start_date CHECK (
-        display_start_date = DATE(display_start_date)
+        DATE(display_start_date, '+0 days') IS NOT NULL
+        AND display_start_date = DATE(display_start_date, '+0 days')
     ),
     CONSTRAINT chk_collection_end_date CHECK (
-        display_end_date = DATE(display_end_date)
+        DATE(display_end_date, '+0 days') IS NOT NULL
+        AND display_end_date = DATE(display_end_date, '+0 days')
     )
 );
 
