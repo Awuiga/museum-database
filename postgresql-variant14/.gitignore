@@ -1,0 +1,12 @@
+# Локальные настройки с паролем
+config.yaml
+.env
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Временные файлы
+.DS_Store
