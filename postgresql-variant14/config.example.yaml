@@ -1,0 +1,8 @@
+# Скопируйте этот файл в config.yaml и укажите свои настройки.
+# config.yaml не отправляется в GitHub.
+dbname: museum_pg
+user: postgres
+password: ""
+host: 127.0.0.1
+port: 5433
+dbtableprefix: "public."
